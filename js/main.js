@@ -14,9 +14,9 @@ $(document).ready(function() {
 			$('h2#output').text('This triangle doesn\'t exist!');
 		}	else if (a >= (b + c) || b >= (a + c) || c >= (a + b)) {
 			$('h2#output').text('Not a triangle');
-		} else if (a === b && b === b) {
+		} else if (a === b && b === c) {
 			$('h2#output').text('Equilateral');
-		} else if (a !== b && b !== b && b !== a) {
+		} else if (a !== b && b !== a && a !== c) {
 			$('h2#output').text('Scalene');
 		} else {
 			$('h2#output').text('Isosceles');
