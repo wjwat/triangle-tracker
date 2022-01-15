@@ -10,13 +10,13 @@ $(document).ready(function() {
 		c = parseInt($('input#side-c').val());
 
 		// only positive numbers
-		if (a <= 0 || b <= 0 || b <= 0) {
+		if (a <= 0 || b <= 0 || c <= 0) {
 			$('h2#output').text('This triangle doesn\'t exist!');
 		}	else if (a >= (b + c) || b >= (a + c) || c >= (a + b)) {
 			$('h2#output').text('Not a triangle');
 		} else if (a === b && b === c) {
 			$('h2#output').text('Equilateral');
-		} else if (a !== b && b !== a && a !== c) {
+		} else if (a !== b && b !== c && a !== c) {
 			$('h2#output').text('Scalene');
 		} else {
 			$('h2#output').text('Isosceles');
